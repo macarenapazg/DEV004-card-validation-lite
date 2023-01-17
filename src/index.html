@@ -7,13 +7,29 @@
 </head>
 
 <body>
-  <h1>Hola buenos dias</h1>
-  <input id="cardnumber"></input>
-  <button onclick="validate()">Validar</button>
+  <h1>Validar Tarjeta </h1>
+  
+
+  <form class="form" action="">
+    <h2>Ingresa aqui los numeros de tu Tarjeta</h2>
+      <label for="cardnumber"></label>
+      <input id="cardnumber" type="text" name="cardnumber" maxlength="13" placeholder="solo numeros sin espacios"></input>
+      <input type="submit" type="submit" value="Validar" >
+      <div class="error"></div>
+    </form>
+
+  
+
+  <!--
+
+
+
+
   <div id="result"></div>
   <script lang="javascript">
     function validate() {
-      const valid = isValid(document.getElementById("cardnumber").value)
+      const valid = isValid(document.getElementById("cardnumber").value) 
+      
       if (valid) {
         // Show success in div#result
       }
@@ -26,7 +42,9 @@
       // is creditCardNumber valid?
       return false
     }
-  </script>
+  </script>   -->
+  <img src="./img/tcimg.png" alt="imagen tc">
+  <script src="./main.js"></script>
 </body>
 
 </html>
